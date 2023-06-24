@@ -1,0 +1,280 @@
+@use './colors' as colors;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+}
+
+html{
+	scroll-padding-top: 60px;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.4;
+	background-color: #333;
+}
+.color-span {
+	color: colors.$primary-color;
+}
+
+.nav-background {
+	background-color: rgba(39, 0, 78, 0.9);
+}
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+	background-color: colors.$secondary-color;
+	height: 4px;
+	width: 80px;
+	margin: 0 auto 40px;
+}
+
+nav {
+	transition: background-color 0.6s ease;
+	// background-color: colors.$secondary-color;
+	z-index: 3;
+
+	text-transform: uppercase;
+	.nav-background {
+		background-color: colors.$secondary-color;
+	}
+
+	.navbar-toggler {
+		padding: 10px 15px;
+		border: 2px solid white;
+	}
+	.navbar-toggler:focus {
+		box-shadow: none;
+		border: 2px solid colors.$primary-color;
+	}
+
+	.nav-link,
+	.navbar-brand,
+	.fa-bars {
+		color: colors.$basic-color;
+		font-weight: bold;
+	}
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .nav-link.show {
+		color: colors.$primary-color;
+	}
+	.navbar-brand {
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	.navbar-brand:hover {
+		color: colors.$primary-color;
+	}
+}
+
+// Header
+
+header {
+	.fa-chevron-down {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		font-size: 30px;
+		color: white;
+		z-index: 3;
+		transform: translateX(-50%);
+	}
+}
+
+.hero-img {
+	background-image: url('../img/top-view-gaming-gear.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100vw;
+	background-attachment: fixed;
+	z-index: 0;
+}
+.hero-text {
+	color: white;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+.hero-img::before {
+	content: '';
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	position: absolute;
+}
+
+.about-us {
+	
+	i{
+		font-size: 30px;
+		margin-top: 20px;
+
+	}
+	.about-us-card-title{
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.about-us-card-title{
+		font-size: 14px;
+		
+	}
+
+	.about-us-hover{
+		transition: color 0.3s ease;
+	}
+	
+	.about-us-hover:hover{
+		color: colors.$primary-color;
+	}
+	
+}
+
+.platforms-hero-img{
+	position: relative;
+	background-image: url('../img/12981664_5113586.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	color:white;
+	z-index: 0;
+	
+}
+
+
+
+
+.platforms-hero-img::before{
+	content: '';
+	position: absolute;
+	background-color:rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+}
+
+.platforms-item{
+	margin: 10px 0;
+
+	.fa-brands{
+		font-size: 30px;
+	}
+	.platforms-card-title{
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+}
+
+
+.portfolio{
+	.carousel-item{
+		height: 600px;
+		img{
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		
+	}
+	.carousel-caption{
+		background-color: rgba(0, 0, 0, 0.8);
+		width: 100%;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 40px 0;
+	}
+	.carousel-indicators{
+		padding-bottom: 10px;
+	}
+}
+
+
+// PRICES
+
+.prices{
+	span{
+		font-weight: bold;
+	}
+	i{
+		padding: 0 4px;
+		font-size: 24px;
+	}
+	.price-box{
+		background-color: white;
+		margin: 20px;
+		padding: 30px;
+		width: 250px;
+		border-radius: 5px;
+		box-shadow: 5px 5px 5px colors.$primary-color;
+		transition: transform 0.4s ease;
+	}
+.price-box:hover{
+	transform: scale(1.05);
+}
+
+	.device-tag, .price-tag{
+		color:colors.$secondary-color ;
+		font-weight: bold;
+	}
+	.device-tag{
+		text-transform: uppercase;
+	}
+	.price-tag{
+		
+		
+		font-size: 25px;
+	}
+	.btn{
+		text-transform: uppercase;
+		padding: 10px 25px;
+		background-color:colors.$secondary-color;
+	}
+	.btn:hover{
+		opacity: 0.7;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.hero-img {
+		background-image: url('../img/header-small.jpg');
+
+	}
+}
+@media (min-width: 768px) {
+	.hero-text {
+		h1 {
+			font-size: 48px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+}
+
+@media(min-width:992px){
+	html{scroll-padding-top: 55px;}
+}
+

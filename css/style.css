@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-padding-top: 60px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.4;
+  background-color: #333;
+}
+
+.color-span {
+  color: rgb(158, 92, 215);
+}
+
+.nav-background {
+  background-color: rgba(39, 0, 78, 0.9);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  background-color: rgb(39, 0, 78);
+  height: 4px;
+  width: 80px;
+  margin: 0 auto 40px;
+}
+
+nav {
+  transition: background-color 0.6s ease;
+  z-index: 3;
+  text-transform: uppercase;
+}
+nav .nav-background {
+  background-color: rgb(39, 0, 78);
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+  border: 2px solid white;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+  border: 2px solid rgb(158, 92, 215);
+}
+nav .nav-link,
+nav .navbar-brand,
+nav .fa-bars {
+  color: white;
+  font-weight: bold;
+}
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+  color: rgb(158, 92, 215);
+}
+nav .navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+nav .navbar-brand:hover {
+  color: rgb(158, 92, 215);
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  z-index: 3;
+  transform: translateX(-50%);
+}
+
+.hero-img {
+  background-image: url("../img/top-view-gaming-gear.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.hero-text {
+  color: white;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-img::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.about-us i {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.about-us .about-us-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.about-us .about-us-card-title {
+  font-size: 14px;
+}
+.about-us .about-us-hover {
+  transition: color 0.3s ease;
+}
+.about-us .about-us-hover:hover {
+  color: rgb(158, 92, 215);
+}
+
+.platforms-hero-img {
+  position: relative;
+  background-image: url("../img/12981664_5113586.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 0;
+}
+
+.platforms-hero-img::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+.platforms-item {
+  margin: 10px 0;
+}
+.platforms-item .fa-brands {
+  font-size: 30px;
+}
+.platforms-item .platforms-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.portfolio .carousel-item {
+  height: 600px;
+}
+.portfolio .carousel-item img {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.portfolio .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 40px 0;
+}
+.portfolio .carousel-indicators {
+  padding-bottom: 10px;
+}
+
+.prices span {
+  font-weight: bold;
+}
+.prices i {
+  padding: 0 4px;
+  font-size: 24px;
+}
+.prices .price-box {
+  background-color: white;
+  margin: 20px;
+  padding: 30px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(158, 92, 215);
+  transition: transform 0.4s ease;
+}
+.prices .price-box:hover {
+  transform: scale(1.05);
+}
+.prices .device-tag, .prices .price-tag {
+  color: rgb(39, 0, 78);
+  font-weight: bold;
+}
+.prices .device-tag {
+  text-transform: uppercase;
+}
+.prices .price-tag {
+  font-size: 25px;
+}
+.prices .btn {
+  text-transform: uppercase;
+  padding: 10px 25px;
+  background-color: rgb(39, 0, 78);
+}
+.prices .btn:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 1200px) {
+  .hero-img {
+    background-image: url("../img/header-small.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 55px;
+  }
+}/*# sourceMappingURL=style.css.map */
