@@ -261,6 +261,9 @@ header {
 // TEAM
 
 .team{
+	.card-body{
+		height: 160px;
+	}
 	.underline{
 		background-color: colors.$primary-color;
 	}
