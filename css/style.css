@@ -226,6 +226,9 @@ header .fa-chevron-down {
 .team {
   background-color: rgb(39, 0, 78);
 }
+.team .underline {
+  background-color: rgb(158, 92, 215);
+}
 .team .card {
   overflow: hidden;
   box-shadow: 7px 7px 7px rgb(158, 92, 215);
@@ -236,6 +239,8 @@ header .fa-chevron-down {
 }
 .team .card-title {
   text-align: center;
+  text-transform: uppercase;
+  color: rgb(39, 0, 78);
 }
 .team .card-footer {
   border: none;

@@ -261,6 +261,9 @@ header {
 // TEAM
 
 .team{
+	.underline{
+		background-color: colors.$primary-color;
+	}
 	.card{overflow: hidden;
 	
 		box-shadow: 7px 7px 7px colors.$primary-color;
@@ -274,6 +277,8 @@ header {
 	background-color: colors.$secondary-color;
 	.card-title{
 		text-align: center;
+		text-transform: uppercase;
+		color: colors.$secondary-color;
 	}
 	.card-footer{
 		border: none;
