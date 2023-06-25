@@ -228,7 +228,7 @@ header .fa-chevron-down {
 }
 .team .card {
   overflow: hidden;
-  box-shadow: -10px 10px 10px rgb(158, 92, 215);
+  box-shadow: 7px 7px 7px rgb(158, 92, 215);
   transition: transform 0.4s ease;
 }
 .team .card:hover {
