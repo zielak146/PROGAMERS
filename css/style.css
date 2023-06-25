@@ -223,6 +223,28 @@ header .fa-chevron-down {
   opacity: 0.7;
 }
 
+.team {
+  background-color: rgb(39, 0, 78);
+}
+.team .card {
+  overflow: hidden;
+  box-shadow: -10px 10px 10px rgb(158, 92, 215);
+  transition: transform 0.4s ease;
+}
+.team .card:hover {
+  transform: scale(0.95);
+}
+.team .card-title {
+  text-align: center;
+}
+.team .card-footer {
+  border: none;
+}
+.team .card-footer i {
+  margin: 0 15px;
+  color: rgb(158, 92, 215);
+}
+
 @media (min-width: 1200px) {
   .hero-img {
     background-image: url("../img/header-small.jpg");

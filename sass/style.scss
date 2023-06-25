@@ -257,6 +257,33 @@ header {
 }
 
 
+
+// TEAM
+
+.team{
+	.card{overflow: hidden;
+	
+		box-shadow: -10px 10px 10px colors.$primary-color;
+		transition: transform 0.4s ease;
+	}
+	.card:hover{
+		transform: scale(0.95);
+		
+		
+	}
+	background-color: colors.$secondary-color;
+	.card-title{
+		text-align: center;
+	}
+	.card-footer{
+		border: none;
+		i{
+			margin: 0 15px;
+			color: colors.$primary-color;
+		}
+	}
+}
+
 @media (min-width: 1200px) {
 	.hero-img {
 		background-image: url('../img/header-small.jpg');
