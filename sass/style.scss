@@ -91,6 +91,7 @@ header {
 }
 
 .hero-img {
+	position: relative;
 	background-image: url('../img/top-view-gaming-gear.jpg');
 	background-size: cover;
 	background-position: center;
@@ -126,6 +127,7 @@ header {
 	i{
 		font-size: 30px;
 		margin-top: 20px;
+		cursor: pointer;
 
 	}
 	.about-us-card-title{
@@ -291,6 +293,30 @@ header {
 		}
 	}
 }
+
+
+// ACHIEVEMNTS
+.achievement-card{
+	margin-bottom: 35px;
+	
+	
+	i{
+		text-shadow: 2px 2px 2px rgba(158, 92, 215, 0.56);
+		font-size:48px;
+		color: colors.$secondary-color;
+		margin-bottom: 15px;
+	}
+	.number, .category{
+		
+		font-size: 20px;
+		// font-weight: bold;
+		color: colors.$secondary-color;
+	}
+	.category{
+		font-weight: bold;
+	}
+}
+
 
 @media (min-width: 1200px) {
 	.hero-img {
