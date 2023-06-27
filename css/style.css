@@ -19,7 +19,6 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   line-height: 1.4;
-  background-color: #333;
 }
 
 .color-span {
@@ -360,6 +359,10 @@ header .fa-chevron-down {
   width: 100%;
   background-size: cover;
   position: absolute;
+}
+
+footer {
+  background-color: rgb(39, 0, 78);
 }
 
 @media (min-width: 1200px) {
