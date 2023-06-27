@@ -141,6 +141,7 @@ header {
 
 	.about-us-hover{
 		transition: color 0.3s ease;
+		cursor: pointer;
 	}
 	
 	.about-us-hover:hover{
@@ -315,6 +316,26 @@ header {
 	.category{
 		font-weight: bold;
 	}
+}
+
+
+// CONTACT
+
+.contact{
+	i{
+		// text-shadow: 2px 2px 2px rgba(158, 92, 215, 0.56);
+		font-size:28px;
+		color: colors.$primary-color;
+		margin-right: 1rem;
+	}
+	.card-title{
+		color: colors.$secondary-color;
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 1rem;
+		
+	}
+
 }
 
 
