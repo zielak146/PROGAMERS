@@ -95,7 +95,6 @@ header .fa-chevron-down {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
   background-attachment: fixed;
   z-index: 0;
 }
@@ -209,10 +208,19 @@ header .fa-chevron-down {
   width: 250px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgb(158, 92, 215);
-  transition: transform 0.4s ease;
+  transition: all 0.4s ease;
 }
 .prices .price-box:hover {
   transform: scale(1.05);
+  background-color: rgb(39, 0, 78);
+}
+.prices .price-box:hover .device-tag,
+.prices .price-box:hover .price-tag, .prices .price-box:hover .price-element {
+  color: white;
+}
+.prices .price-box:hover .btn {
+  background-color: white;
+  color: rgb(39, 0, 78);
 }
 .prices .device-tag,
 .prices .price-tag {
@@ -231,6 +239,7 @@ header .fa-chevron-down {
   background-color: rgb(39, 0, 78);
 }
 .prices .btn:hover {
+  background-color: white;
   opacity: 0.7;
 }
 .prices .prices-footer {
@@ -327,6 +336,9 @@ header .fa-chevron-down {
   font-size: 28px;
   color: white;
   margin-right: 1rem;
+}
+.contact i:hover {
+  color: rgb(158, 92, 215);
 }
 .contact .card-title {
   color: rgb(158, 92, 215);
