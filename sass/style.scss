@@ -6,12 +6,14 @@
 	font-family: 'Nunito', sans-serif;
 	scroll-behavior: smooth;
 }
-::after,::before{
+::after,
+::before {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;}
+	box-sizing: border-box;
+}
 
-html{
+html {
 	scroll-padding-top: 60px;
 }
 
@@ -128,38 +130,35 @@ header {
 }
 
 .about-us {
-
-	.about-us-card-title{
+	.about-us-card-title {
 		margin-bottom: 1rem;
 		font-size: 18px;
 		font-weight: bold;
 		color: colors.$secondary-color;
 		text-transform: uppercase;
 	}
-	
-	.about-us-card-text{
+
+	.about-us-card-text {
 		font-size: 16px;
 		font-style: italic;
 	}
 
-	.about-us-card{
+	.about-us-card {
 		transition: all 0.3s ease;
 		// cursor: pointer;
-		i{
+		i {
 			// text-shadow: 2px 2px 2px rgba(158, 92, 215, 0.56);
-			font-size:48px;
+			font-size: 48px;
 			color: colors.$secondary-color;
-	
 		}
 	}
-	
+
 	// .about-us-card:hover{
 	// 	color: colors.$primary-color;
 	// }
-	
 }
 
-.platforms-hero-img{
+.platforms-hero-img {
 	position: relative;
 	background-image: url('../img/12981664_5113586.jpeg');
 	background-size: cover;
@@ -167,18 +166,14 @@ header {
 	background-position: center;
 	width: 100%;
 	height: 100%;
-	color:white;
+	color: white;
 	z-index: 0;
-	
 }
 
-
-
-
-.platforms-hero-img::before{
+.platforms-hero-img::before {
 	content: '';
 	position: absolute;
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 	width: 100%;
 	height: 100%;
 	z-index: -1;
@@ -186,30 +181,28 @@ header {
 	background-position: center;
 }
 
-.platforms-item{
+.platforms-item {
 	margin: 10px 0;
 
-	.fa-brands{
+	.fa-brands {
 		font-size: 30px;
 	}
-	.platforms-card-title{
+	.platforms-card-title {
 		font-size: 18px;
 		text-transform: uppercase;
 	}
 }
 
-
-.portfolio{
-	.carousel-item{
+.portfolio {
+	.carousel-item {
 		height: 600px;
-		img{
+		img {
 			background-position: center;
 			background-size: cover;
 			background-attachment: fixed;
 		}
-		
 	}
-	.carousel-caption{
+	.carousel-caption {
 		background-color: rgba(0, 0, 0, 0.8);
 		width: 100%;
 		bottom: 0;
@@ -217,23 +210,22 @@ header {
 		left: 0;
 		padding: 40px 0;
 	}
-	.carousel-indicators{
+	.carousel-indicators {
 		padding-bottom: 10px;
 	}
 }
 
-
 // PRICES
 
-.prices{
-	span{
+.prices {
+	span {
 		font-weight: bold;
 	}
-	i{
+	i {
 		padding: 0 4px;
 		font-size: 24px;
 	}
-	.price-box{
+	.price-box {
 		background-color: white;
 		margin: 20px;
 		padding: 30px;
@@ -242,99 +234,112 @@ header {
 		box-shadow: 5px 5px 5px colors.$primary-color;
 		transition: transform 0.4s ease;
 	}
-.price-box:hover{
-	transform: scale(1.05);
-}
+	.price-box:hover {
+		transform: scale(1.05);
+	}
 
-	.device-tag, .price-tag{
-		color:colors.$secondary-color ;
+	.device-tag,
+	.price-tag {
+		color: colors.$secondary-color;
 		font-weight: bold;
 	}
-	.device-tag{
+	.device-tag {
 		text-transform: uppercase;
 	}
-	.price-tag{
-		
-		
+	.price-tag {
 		font-size: 25px;
 	}
-	.btn{
+	.btn {
 		text-transform: uppercase;
 		padding: 10px 25px;
-		background-color:colors.$secondary-color;
+		background-color: colors.$secondary-color;
 	}
-	.btn:hover{
+	.btn:hover {
 		opacity: 0.7;
 	}
 
-	.prices-footer{
+	.prices-footer {
 		font-style: italic;
 	}
 }
 
-
-
 // TEAM
 
-.team{
-	.card-body{
+.team {
+	position: relative;
+	background-image: url('../img/6195950_3193774.jpeg');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	z-index: 0;
+	.card-body {
 		height: 160px;
 	}
-	.underline{
+	.underline {
 		background-color: colors.$primary-color;
 	}
-	.card{overflow: hidden;
-	
+	.card {
+		overflow: hidden;
+
 		box-shadow: 7px 7px 7px colors.$primary-color;
 		transition: transform 0.4s ease;
 	}
-	.card:hover{
+	.card:hover {
 		transform: scale(0.95);
-		
-		
 	}
 	background-color: colors.$secondary-color;
-	.card-title{
+	.card-title {
 		text-align: center;
 		text-transform: uppercase;
 		color: colors.$secondary-color;
 	}
-	.card-footer{
+	.card-footer {
 		border: none;
-		i{
+		i {
 			margin: 0 15px;
 			color: colors.$primary-color;
 		}
 	}
 }
-
+.team::before {
+	content: '';
+	top: 0;
+	left: 0;
+	background-color: rgba(39, 0, 78, 0.7);
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	position: absolute;
+}
 
 // ACHIEVEMNTS
-.achievement-card{
+.achievement-card {
 	margin-bottom: 35px;
-	
-	
-	i{
+
+	i {
 		text-shadow: 2px 2px 2px rgba(158, 92, 215, 0.56);
-		font-size:48px;
+		font-size: 48px;
 		color: colors.$secondary-color;
 		margin-bottom: 15px;
 	}
-	.number, .category{
-		
+	.number,
+	.category {
 		font-size: 20px;
 		// font-weight: bold;
 		color: colors.$secondary-color;
 	}
-	.category{
+	.category {
 		font-weight: bold;
 	}
 }
 
-
 // CONTACT
 
-.contact{
+.contact {
 	position: relative;
 	background-image: url('../img/3162508.jpg');
 	background-size: cover;
@@ -344,36 +349,31 @@ header {
 	width: 100%;
 	background-attachment: fixed;
 	z-index: 0;
-	.section-title{
+	.section-title {
 		color: white;
 	}
-	
-	i{
+
+	i {
 		// text-shadow: 2px 2px 2px rgba(158, 92, 215, 0.56);
-		font-size:28px;
+		font-size: 28px;
 		// color: colors.$primary-color;
 		color: white;
 		margin-right: 1rem;
 	}
-	.card-title{
+	.card-title {
 		color: colors.$primary-color;
 		// color: white;
 		font-size: 24px;
 		font-weight: bold;
 		margin-bottom: 1rem;
-		
 	}
-	.card-text{
-		color:white;
+	.card-text {
+		color: white;
 	}
-	
-
-
-
 }
 .contact::before {
 	content: '';
-	top:0;
+	top: 0;
 	left: 0;
 	background-color: rgba(39, 0, 78, 0.6);
 	z-index: -1;
@@ -383,11 +383,9 @@ header {
 	position: absolute;
 }
 
-
 @media (min-width: 1200px) {
 	.hero-img {
 		background-image: url('../img/header-small.jpg');
-
 	}
 }
 @media (min-width: 768px) {
@@ -401,18 +399,16 @@ header {
 	}
 }
 
-@media(min-width:992px){
-	html{scroll-padding-top: 55px;}
-}
-
-
-@media(max-width:576px){
-	header {
-		.fa-chevron-down {
-			
-			bottom: 15%;
-			
-		}
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 55px;
 	}
 }
 
+@media (max-width: 576px) {
+	header {
+		.fa-chevron-down {
+			bottom: 15%;
+		}
+	}
+}

@@ -5,7 +5,8 @@
   scroll-behavior: smooth;
 }
 
-::after, ::before {
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -213,7 +214,8 @@ header .fa-chevron-down {
 .prices .price-box:hover {
   transform: scale(1.05);
 }
-.prices .device-tag, .prices .price-tag {
+.prices .device-tag,
+.prices .price-tag {
   color: rgb(39, 0, 78);
   font-weight: bold;
 }
@@ -236,6 +238,15 @@ header .fa-chevron-down {
 }
 
 .team {
+  position: relative;
+  background-image: url("../img/6195950_3193774.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  z-index: 0;
   background-color: rgb(39, 0, 78);
 }
 .team .card-body {
@@ -265,6 +276,18 @@ header .fa-chevron-down {
   color: rgb(158, 92, 215);
 }
 
+.team::before {
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(39, 0, 78, 0.7);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
 .achievement-card {
   margin-bottom: 35px;
 }
@@ -274,7 +297,8 @@ header .fa-chevron-down {
   color: rgb(39, 0, 78);
   margin-bottom: 15px;
 }
-.achievement-card .number, .achievement-card .category {
+.achievement-card .number,
+.achievement-card .category {
   font-size: 20px;
   color: rgb(39, 0, 78);
 }
