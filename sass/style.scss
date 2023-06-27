@@ -352,7 +352,9 @@ header {
 	.section-title {
 		color: white;
 	}
-
+	.underline {
+		background-color: colors.$primary-color;
+	}
 	i {
 		// text-shadow: 2px 2px 2px rgba(158, 92, 215, 0.56);
 		font-size: 28px;

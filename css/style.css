@@ -320,6 +320,9 @@ header .fa-chevron-down {
 .contact .section-title {
   color: white;
 }
+.contact .underline {
+  background-color: rgb(158, 92, 215);
+}
 .contact i {
   font-size: 28px;
   color: white;
