@@ -231,6 +231,9 @@ header .fa-chevron-down {
 .prices .btn:hover {
   opacity: 0.7;
 }
+.prices .prices-footer {
+  font-style: italic;
+}
 
 .team {
   background-color: rgb(39, 0, 78);
@@ -279,16 +282,45 @@ header .fa-chevron-down {
   font-weight: bold;
 }
 
+.contact {
+  position: relative;
+  background-image: url("../img/3162508.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.contact .section-title {
+  color: white;
+}
 .contact i {
   font-size: 28px;
-  color: rgb(158, 92, 215);
+  color: white;
   margin-right: 1rem;
 }
 .contact .card-title {
-  color: rgb(39, 0, 78);
+  color: white;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+.contact .card-text {
+  color: white;
+}
+
+.contact::before {
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(39, 0, 78, 0.6);
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
 }
 
 @media (min-width: 1200px) {

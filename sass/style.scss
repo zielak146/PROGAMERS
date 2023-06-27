@@ -266,6 +266,10 @@ header {
 	.btn:hover{
 		opacity: 0.7;
 	}
+
+	.prices-footer{
+		font-style: italic;
+	}
 }
 
 
@@ -331,20 +335,52 @@ header {
 // CONTACT
 
 .contact{
+	position: relative;
+	background-image: url('../img/3162508.jpg');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	z-index: 0;
+	.section-title{
+		color: white;
+	}
+	
 	i{
 		// text-shadow: 2px 2px 2px rgba(158, 92, 215, 0.56);
 		font-size:28px;
-		color: colors.$primary-color;
+		// color: colors.$primary-color;
+		color: white;
 		margin-right: 1rem;
 	}
 	.card-title{
-		color: colors.$secondary-color;
+		// color: colors.$secondary-color;
+		color: white;
 		font-size: 24px;
 		font-weight: bold;
 		margin-bottom: 1rem;
 		
 	}
+	.card-text{
+		color:white;
+	}
+	
 
+
+
+}
+.contact::before {
+	content: '';
+	top:0;
+	left: 0;
+	background-color: rgba(39, 0, 78, 0.6);
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	position: absolute;
 }
 
 
