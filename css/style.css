@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -114,24 +121,23 @@ header .fa-chevron-down {
   position: absolute;
 }
 
-.about-us i {
-  font-size: 30px;
-  margin-top: 20px;
-  cursor: pointer;
-}
 .about-us .about-us-card-title {
+  margin-bottom: 1rem;
   font-size: 18px;
+  font-weight: bold;
+  color: rgb(39, 0, 78);
   text-transform: uppercase;
 }
-.about-us .about-us-card-title {
-  font-size: 14px;
+.about-us .about-us-card-text {
+  font-size: 16px;
+  font-style: italic;
 }
-.about-us .about-us-hover {
-  transition: color 0.3s ease;
-  cursor: pointer;
+.about-us .about-us-card {
+  transition: all 0.3s ease;
 }
-.about-us .about-us-hover:hover {
-  color: rgb(158, 92, 215);
+.about-us .about-us-card i {
+  font-size: 48px;
+  color: rgb(39, 0, 78);
 }
 
 .platforms-hero-img {
@@ -301,5 +307,10 @@ header .fa-chevron-down {
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 55px;
+  }
+}
+@media (max-width: 576px) {
+  header .fa-chevron-down {
+    bottom: 15%;
   }
 }/*# sourceMappingURL=style.css.map */

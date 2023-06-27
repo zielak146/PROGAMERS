@@ -4,7 +4,12 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Nunito', sans-serif;
+	scroll-behavior: smooth;
 }
+::after,::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;}
 
 html{
 	scroll-padding-top: 60px;
@@ -123,30 +128,34 @@ header {
 }
 
 .about-us {
-	
-	i{
-		font-size: 30px;
-		margin-top: 20px;
-		cursor: pointer;
 
-	}
 	.about-us-card-title{
+		margin-bottom: 1rem;
 		font-size: 18px;
+		font-weight: bold;
+		color: colors.$secondary-color;
 		text-transform: uppercase;
 	}
-	.about-us-card-title{
-		font-size: 14px;
-		
+	
+	.about-us-card-text{
+		font-size: 16px;
+		font-style: italic;
 	}
 
-	.about-us-hover{
-		transition: color 0.3s ease;
-		cursor: pointer;
+	.about-us-card{
+		transition: all 0.3s ease;
+		// cursor: pointer;
+		i{
+			// text-shadow: 2px 2px 2px rgba(158, 92, 215, 0.56);
+			font-size:48px;
+			color: colors.$secondary-color;
+	
+		}
 	}
 	
-	.about-us-hover:hover{
-		color: colors.$primary-color;
-	}
+	// .about-us-card:hover{
+	// 	color: colors.$primary-color;
+	// }
 	
 }
 
@@ -358,5 +367,16 @@ header {
 
 @media(min-width:992px){
 	html{scroll-padding-top: 55px;}
+}
+
+
+@media(max-width:576px){
+	header {
+		.fa-chevron-down {
+			
+			bottom: 15%;
+			
+		}
+	}
 }
 
