@@ -24,3 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
 //   const navList = document.querySelector('.navbar-collapse');
 
 //  allNavItems.forEach(item => item.addEventListener('click' , () => {navList.classList.remove('show')}))
+
+
+

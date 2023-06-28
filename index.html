@@ -15,7 +15,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>WebPage!</title>
+		<title>PROGAMERS</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -37,6 +37,8 @@
 			type="text/css"
 			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
 		/>
+
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
@@ -71,15 +73,19 @@
 			</div>
 		</nav>
 		<header class="hero-img" id="home">
-			<div class="hero-text p-2 text">
-				<h1>WELCOME IN PRO<span class="color-span">GAMERS</span></h1>
-				<p>In place where we make games with passion!</p>
-				<a href="#contact" class="mt-2 btn btn-header btn-outline-light"
+			<div  class="hero-text  p-2 text">
+				<h1 data-aos="fade-up"
+				data-aos-easing="linear"
+				data-aos-duration="1000"data-aos-delay="200">WELCOME IN PRO<span class="color-span">GAMERS</span></h1>
+				<p data-aos="fade-up" data-aos-easing="linear"
+				data-aos-duration="1000" data-aos-delay="400">In place where we make games with passion!</p>
+				<a data-aos="fade-up" data-aos-easing="linear"
+				data-aos-duration="1000" data-aos-delay="600" href="#contact" class="mt-2 btn btn-header btn-outline-light "
 					>Get in touch!</a
 				>
 			</div>
 			<a href="#about-us" class="arrow"
-				><i class="fa-sharp fa-solid fa-chevron-down arrow"></i
+				><i class="fa-sharp fa-solid fa-chevron-down arrow shake-vertical"></i
 			></a>
 		</header>
 
@@ -88,7 +94,9 @@
 				<div class="container">
 					<h2 class="section-title text-center">About Us</h2>
 					<div class="underline"></div>
-					<div class="row">
+					<div data-aos="fade-right"
+					data-aos-easing="linear"
+					data-aos-duration="1000"data-aos-delay="200" class="row ">
 						<div class="col-sm-6 col-md-4 text-center mb-5 about-us-card">
 							<p><i class="fa-solid fa-mobile-screen"></i></p>
 							<p class="about-us-card-title">Mobile Gaming</p>
@@ -135,7 +143,7 @@
 				<div class="container platforms-content py-5">
 					<h2 class="section-title text-center">Tworzymy Gry na Platformy</h2>
 					<div class="underline"></div>
-					<div class="row">
+					<div  class="row">
 						<div class="col-lg-4 text-center mb-5 platforms-item">
 							<p><i class="fa-brands fa-steam"></i></p>
 							<p class="platforms-card-title mb-1">PC</p>
@@ -281,7 +289,9 @@
 				<div class="underline"></div>
 				<div class="container">
 					<div class="row justify-content-center text-center">
-						<div class="price-box col-md-6 col-xl-4">
+						<div data-aos="fade-right"
+						data-aos-easing="linear"
+						data-aos-duration="1000"data-aos-delay="200" class="price-box col-md-6 col-xl-4">
 							<h4 class="device-tag">Mobile</h4>
 							<hr />
 							<p class="price-element">
@@ -295,7 +305,9 @@
 								Add to Cart
 							</button>
 						</div>
-						<div class="price-box col-md-6 col-xl-4">
+						<div data-aos="fade-right"
+						data-aos-easing="linear"
+						data-aos-duration="1000"data-aos-delay="600" class="price-box col-md-6 col-xl-4">
 							<h4 class="device-tag">Mobile & PC</h4>
 							<hr />
 							<p class="price-element">
@@ -310,7 +322,9 @@
 								Add to Cart
 							</button>
 						</div>
-						<div class="price-box col-md-6 col-xl-4">
+						<div data-aos="fade-right"
+						data-aos-easing="linear"
+						data-aos-duration="1000"data-aos-delay="1000" class="price-box col-md-6 col-xl-4">
 							<h4 class="device-tag">Full Pack</h4>
 							<hr />
 							<p class="price-element">
@@ -452,7 +466,9 @@
 				<h2 class="section-title">ACHIEVEMENTS</h2>
 				<div class="underline"></div>
 				<div class="container">
-					<div class="row d-flex justify-content-center align-items-baseline">
+					<div data-aos="fade-right"
+					data-aos-easing="linear"
+					data-aos-duration="1000"data-aos-delay="200" class="row d-flex justify-content-center align-items-baseline">
 						<div
 							class="achievement-card col-sm-6 col-md-4 col-lg-2 text-center"
 						>
@@ -549,6 +565,14 @@
 			type="text/javascript"
 			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 		></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		  AOS.init({
+			startEvent:'DOMContentLoaded',
+			offset:200,
+			once:true,
+		  });
+		</script>
 	</body>
 	<script src="./slick.js"></script>
 	<script src="./script.js"></script>
