@@ -415,6 +415,7 @@ footer{
 	}
 }
 @media (min-width: 768px) {
+
 	.hero-text {
 		h1 {
 			font-size: 48px;
@@ -437,4 +438,12 @@ footer{
 			bottom: 15%;
 		}
 	}
-}
+	}
+
+	@media (max-width: 992px) {
+		nav {
+			background-color:colors.$secondary-color;
+			// background-color: colors.$secondary-color;
+			
+	}
+	}

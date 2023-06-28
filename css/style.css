@@ -451,4 +451,9 @@ footer {
   header .fa-chevron-down {
     bottom: 15%;
   }
+}
+@media (max-width: 992px) {
+  nav {
+    background-color: rgb(39, 0, 78);
+  }
 }/*# sourceMappingURL=style.css.map */
