@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
      function addBackground() {
-      if (window.scrollY >= 100) {
+      if (window.scrollY >= 1) {
         nav.classList.add('nav-background');
       } else {
         nav.classList.remove('nav-background');
